@@ -1,0 +1,29 @@
+{
+  "task_type": "REPLACE_WITH_YOUR_TASK_TYPE (e.g. pr_quality_review, ci_failure_triage)",
+  "description": "REPLACE: one sentence describing what this fixture set evaluates.",
+  "fixtures": [
+    {
+      "id": "fixture_001",
+      "description": "REPLACE: a short human-readable label for this example, e.g. 'PR #142 - missing test coverage'",
+      "input": "REPLACE: the real diff, log, or other raw input the agent will see",
+      "expected": {
+        "note": "REPLACE with the specific fields your rubric returns, e.g. category, confidence_min, severity, etc.",
+        "category": "REPLACE",
+        "confidence_min": 0.7
+      },
+      "source": "REPLACE: where this real example came from (PR link, incident ticket, etc.)",
+      "verified_by": "REPLACE: who confirmed this is the correct answer"
+    },
+    {
+      "id": "fixture_002_adversarial",
+      "description": "REPLACE: an adversarial or ambiguous example, per Chapter 6's 'test against adversarial input, not just clean examples' guardrail",
+      "input": "REPLACE",
+      "expected": {
+        "category": "REPLACE",
+        "confidence_min": 0.0
+      },
+      "source": "REPLACE",
+      "verified_by": "REPLACE"
+    }
+  ]
+}

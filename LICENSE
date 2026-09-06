@@ -1,0 +1,30 @@
+Copyright (c) 2026 Simon Marcus
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Code"), to
+deal in the Code without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Code, and to permit persons to whom the Code is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Code.
+
+THE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE CODE OR THE USE OR OTHER DEALINGS IN
+THE CODE.
+
+---
+
+This license applies to the code samples in this repository only. It does
+not grant any rights to the text, structure, or content of the book
+"Agentic AI Engineering for Junior Devs" itself, which remains under its
+own copyright as stated in the book.
+
+Note: this is a placeholder MIT-style license. Replace the year, name, and
+terms above with whatever license you actually intend for this repository
+before publishing it.
