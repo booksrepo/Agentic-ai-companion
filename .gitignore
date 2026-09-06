@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+venv/
+.env
+*.db
+review_output.json
+pr_diff.txt
