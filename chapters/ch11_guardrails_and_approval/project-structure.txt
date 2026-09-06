@@ -1,0 +1,11 @@
+your-agent-project/
+├── prompts/
+│   ├── investigator_v3.txt
+│   ├── diagnostician_v3.txt
+│   └── communicator_v2.txt
+├── schemas/
+│   └── diagnosis_schema.json
+├── config/
+│   └── thresholds.yaml       # confidence thresholds, retry limits, budget caps
+└── src/
+    └── pipeline.py
