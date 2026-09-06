@@ -1,0 +1,39 @@
+# .github/workflows/pr-quality-review.yml
+name: PR Quality Review
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get PR diff
+        run: git diff origin/main...HEAD > pr_diff.txt
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install anthropic
+
+      - name: Run quality agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pr_quality_agent.py pr_diff.txt > review_output.json
+
+      - name: Upload review as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-quality-review
+          path: review_output.json
+
+      - name: Add to job summary
+        run: |
+          echo "## PR Quality Review (draft — human review required)" >> $GITHUB_STEP_SUMMARY
+          cat review_output.json >> $GITHUB_STEP_SUMMARY
